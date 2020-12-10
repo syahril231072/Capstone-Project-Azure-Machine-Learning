@@ -27,4 +27,45 @@ Screenshot of the best model is shown below:
 Screenshot of the RunDetails is shown below:
 ![](best%20model.png)
 ## Automated ML
+The most important settings for the automl run are the following:
+1. The task is classification.
+2. The prediction label is set as Outcome.
+3. The primary metric is AUC_weighted.
+4. Experiment timeouts after 0,3 jam (18 menit).
+5. featurization is set to auto.
+6. max_concurrent_iterations = 4
+7. max_cores_per_iteration = -1
+8. enable_early_stopping is set to True
+## Results
+The voting Ensemble algorithm is the best fitted model with accuracy 84.5%. The parameters of the automl are detailed in the previous section and also shown below:
+![](bestmodelautoml.png)
+One of the impovements will be to collect more data for this classification problem. Also, it might be worthy to test the automl using deep learing models as well to see if the accuracy is increased.
 
+Screenshots of the RunDetails are shown below:
+![](rundetailautoml.png)
+![](rundetailautoml1.png)
+Screenshot of the best model is shown below:
+![](bestmodelautoml.png)
+## Model Deployment
+The model with the best accuracy is the voting Ensemble model from the automl run. Initially, I View updated featurization summary. Then, I Retrieve the Best Model's explanation, Retrieve the Best ONNX Model, and Save the best ONNX model. Then, I Predict with the ONNX model, using onnxruntime package and Deploy the model as a Web Service on Azure Container Instance. Finally, the webservice was tested. As it can be seen in the notebook, I used the json command in order to send the data in the webservice. A sample input is the first four rows of the test data. At the end of the automl notebook, I have tested the output of the endpoint.
+Screenshot is shown the webservice is successfully deployed:
+![](webservicesuccess.png)
+Screenshot is shown the response from my webservice:
+![](responsewebservice.png)
+Screeshot is shown the active endpoint for the deployed model/It can be seen that the endpoint for the saved model is Healthy and active:
+![](deployhealthy.png)
+![](deployhealthy1.png)
+## Screen Recording
+Screen recording is uploaded in the following link: https://www.youtube.com/watch?v=yFtDKdllxsM
+## Standout Suggestions
+1. As mentioned above, I deployed the webservice using onnx. 
+2. I also have enabled the application insights which it can be seen the successful requests from the file I attached (auto-mlenableappinsight.ipynb) and responses of my model. see screenshot below:
+![](enable1.png)
+![](enable2.png)
+![](enable3.png)
+
+
+## Improvements for my model is as such:
+
+1. Collect more data in order to avoid overfitting.
+2. Deploy my model to the Edge using Azure IoT Edge
