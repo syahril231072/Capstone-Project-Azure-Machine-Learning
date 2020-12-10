@@ -83,5 +83,5 @@ Screen recording is uploaded in the following link: https://www.youtube.com/watc
 
 ## Improvements for my model is as such:
 
-1. Collect more data in order to avoid overfitting.
+1. Collect more data in order to make the model more accurate
 2. Deploy my model to the Edge using Azure IoT Edge
