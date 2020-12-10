@@ -4,8 +4,8 @@ For that training model, I used logistic regression because the task for the mac
 
 Results
 The logistic regression model achieved an accuracy of 0.78. The parameters of achieving that accuracy was "C":0.26 and "max_iter": 40 as shown in the picture below:
-![](Run Detail.png)
+![](Run%20Details.png)
 Screenshot of the best model is shown below:
-![](best model.png)
+![](best%20model.png)
 
 Screenshot of the RunDetails is shown below:
