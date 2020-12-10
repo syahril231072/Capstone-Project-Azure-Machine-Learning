@@ -1,7 +1,7 @@
 ## DIABETES PROJECT
 
 ## Overview
-On this project, I have used the Diabetes dataset from Kaggle to predict the possibility of a patient to have a diabetes based on his/her medical records. This is a classification problem. I have used two different train methods to achieve the best score. One training method is using the hyperdrive to optimize the hyperparameters of the logistic regression model for the heart failure dataset. The second training method was the utilization of the azure automl to find the best model fit for the diabetes dataset.
+On this project, I have used the Diabetes dataset from Kaggle to predict the possibility of a patient to have a diabetes based on his/her medical records. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. The datasets consists of several medical predictor variables and one target variable, Outcome. Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on. This is a classification problem. I have used two different train methods to achieve the best score. One training method is using the hyperdrive to optimize the hyperparameters of the logistic regression model for the heart failure dataset. The second training method was the utilization of the azure automl to find the best model fit for the diabetes dataset.
 
 Hyperdrive Model -> hyperparameter_tuning.ipynb
 AutoML Model -> automl.ipynb
@@ -11,8 +11,9 @@ Finally, the best obtained model from the above two training methods is deployed
 
 This project requires access into the Azure ML studio. The following steps to be followed to initialize the project:
  
-Create a new compute target in the Azure ML studio and run the above notebooks using jupyter notebooks.
-Upload dataset from Github Repo that previouly download from Kaggle.
+1. Create a new compute target in the Azure ML studio and run the above notebooks using jupyter notebooks.
+
+2. Upload dataset from Github Repo that previouly download from Kaggle.
 
 ## Hyperparameter Tuning
 
