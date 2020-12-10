@@ -15,6 +15,22 @@ This project requires access into the Azure ML studio. The following steps to be
 
 2. Upload dataset from Github Repo that previouly download from Kaggle.
 
+## Dataset
+## Overview
+Diabetes dataset was obtained from the Kaggle website. https://www.kaggle.com/uciml/pima-indians-diabetes-database. The dataset is also attached (Diabetes.csv)
+
+There are 8 features as clinical records of the patients and the prediction is on the Outcome column.
+Task
+All of the eight features are used from this dataset. The Outcome is the prediction for our classification problem.
+
+For the hyperdrive, I have used the SKLEARN logistic regression algorithm to predict the Outcome column using the Diabetes dataset.
+From the automl run becomes apparent that the best fitted model is the Voting Ensemble model.
+Access
+I have downloaded the dataset from the Kaggle website. Then, I upload to github, and then access it to the model.
+In the notebook, I have used the following command to import the dataset into my workspace: 
+url = "https://github.com/syahril231072/foree/raw/main/Diabetes.csv"
+data = pd.read_csv(url, sep=',', header=0, encoding= 'unicode_escape')
+
 ## Hyperparameter Tuning
 
 For that training model, I used logistic regression because the task for the machine learning algorithm was to solve a classification problem. For that reason, I used the SKLEARN logistic regression model to predict the Outcome. I tried to optimize the "C" and "max_iter" parameters of the logistic regression algorithm. The C parameter represents the inverse regularization strenght and the max_iter parameter represents the maximum number of iterations for the solvers to converge. The "C" parameter was a selection of numbers in uniform from 0.2, 0,5 to 1. For the "max_iter" parameter was a choise from the following number of iterations (25, 50, 100). I have used a random selection of these both parameters for the optimization of the logistic regression model. Finally, the banditPolicy is used as a termination policy which every two iterations checks if the primary metric which is the accuracy falls outside the top 10% range
