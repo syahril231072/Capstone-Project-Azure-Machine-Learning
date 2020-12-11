@@ -42,6 +42,8 @@ Screenshot of the best model is shown below:
 ![](Run%20Details.png)
 Screenshot of the RunDetails is shown below:
 ![](best%20model.png)
+![](hyperparameterrun.png)
+
 ## Automated ML
 The most important settings for the automl run are the following:
 1. The task is classification.
