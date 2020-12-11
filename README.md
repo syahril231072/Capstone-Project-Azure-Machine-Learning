@@ -54,7 +54,8 @@ The most important settings for the automl run are the following:
 8. enable_early_stopping is set to True
 ## Results
 The voting Ensemble algorithm is the best fitted model with accuracy 84.5%. The parameters of the automl are detailed in the previous section and also shown below:
-![](bestmodelautoml.png)
+![](bestrunml1.png)
+![](bestrunml2.png)
 One of the impovements will be to collect more data for this classification problem. Also, it might be worthy to test the automl using deep learing models as well to see if the accuracy is increased.
 
 Screenshots of the RunDetails are shown below:
