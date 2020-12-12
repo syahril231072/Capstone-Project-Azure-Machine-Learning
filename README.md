@@ -39,7 +39,7 @@ Results
 The logistic regression model achieved an accuracy of 0.779. The parameters of achieving that accuracy was "C":0.5 and "max_iter": 50 as shown in the picture below:
 
 Screenshot of the best model is shown below:
-![](bestmodel.png)
+![](hypermodelregister.png)
 Screenshot of the RunDetails is shown below:
 ![](hyperparameterrun.png)
 
@@ -69,12 +69,13 @@ The model with the best accuracy is the voting Ensemble model from the automl ru
 Screenshot is shown the webservice is successfully deployed:
 ![](webservicesuccess.png)
 Screenshot is shown the response from my webservice:
-![](responsewebservice.png)
+![](test1.png)
+![](test2.png)
 Screeshot is shown the active endpoint for the deployed model/It can be seen that the endpoint for the saved model is Healthy and active:
 ![](deployhealthy.png)
 ![](deployhealthy1.png)
 ## Screen Recording
-Screen recording is uploaded in the following link: https://www.youtube.com/watch?v=yFtDKdllxsM
+Screen recording is uploaded in the following link: https://www.youtube.com/watch?v=rcgPrh2qEKQ
 ## Standout Suggestions
 1. As mentioned above, I deployed the webservice using onnx. 
 2. I also have enabled the application insights which it can be seen the successful requests from the file I attached (auto-mlenableappinsight.ipynb) and responses of my model. see screenshot below:
