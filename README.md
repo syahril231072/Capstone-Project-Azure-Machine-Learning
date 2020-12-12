@@ -38,12 +38,12 @@ For that training model, I used logistic regression because the task for the mac
 Results
 The logistic regression model achieved an accuracy of 0.779. The parameters of achieving that accuracy was "C":0.5 and "max_iter": 50 as shown in the picture below:
 
-Screenshot of the best model is shown below:
-![](bestmodel.png)
-Screenshot of the RunDetails is shown below:
+Screenshot of the run detail is shown below:
 ![](hyperparameterrun.png)
+Screenshot of the bestmodel is shown below:
+![](besthyper.png)
  best model being registered:
-![](hypermodelregister.png)
+![](besthyper1.png)
 
 ## Automated ML
 The most important settings for the automl run are the following:
