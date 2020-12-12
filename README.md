@@ -41,9 +41,8 @@ The logistic regression model achieved an accuracy of 0.779. The parameters of a
 Screenshot of the run detail is shown below:
 ![](hyperparameterrun.png)
 Screenshot of the bestmodel is shown below:
-![](besthyper.png)
- best model being registered:
-![](besthyper1.png)
+![](bestmodelhyper.png)
+![](bestmodelhyper1.png)
 
 ## Automated ML
 The most important settings for the automl run are the following:
