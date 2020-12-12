@@ -42,6 +42,8 @@ Screenshot of the best model is shown below:
 ![](bestmodel.png)
 Screenshot of the RunDetails is shown below:
 ![](hyperparameterrun.png)
+ best model being registered:
+![](hypermodelregister.png)
 
 ## Automated ML
 The most important settings for the automl run are the following:
