@@ -39,7 +39,7 @@ Results
 The logistic regression model achieved an accuracy of 0.779. The parameters of achieving that accuracy was "C":0.5 and "max_iter": 50 as shown in the picture below:
 
 Screenshot of the best model is shown below:
-![](hypermodelbestmodel.png)
+![](bestmodel.png)
 Screenshot of the RunDetails is shown below:
 ![](hyperparameterrun.png)
 
